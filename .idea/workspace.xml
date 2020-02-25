@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="832785cd-c34b-4534-a967-046c0e9a41bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearningPython/dictionary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearningPython/list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearningPython/listMethos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearningPython/matrix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearningPython/passwordChecker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/divisibility/divisibility.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/divisibility/smpdiv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funWithSequences6/smpseq8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newCurrencyShopping/newcurr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/primeOrNotPrime/prionpri.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trialDivision/trialdiv.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ariorgeo.py" beforeDir="false" afterPath="$PROJECT_DIR$/arithmeticOrGeometric/ariorgeo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ariorgeo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/arithmeticOrGeometric/ariorgeo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/addingReversedNumbers/addrev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/addingReversedNumbers/addrev.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trialdiv.py" beforeDir="false" afterPath="$PROJECT_DIR$/trialDivision/trialdiv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trialdiv.txt" beforeDir="false" afterPath="$PROJECT_DIR$/primeOrNotPrime/prionpri.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vfmul.py" beforeDir="false" afterPath="$PROJECT_DIR$/veryFastMultiplication/vfmul.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vfmul.txt" beforeDir="false" afterPath="$PROJECT_DIR$/veryFastMultiplication/vfmul.txt" afterDir="false" />
-    </list>
+    <list default="true" id="832785cd-c34b-4534-a967-046c0e9a41bf" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,8 +188,16 @@
       <workItem from="1582419206249" duration="620000" />
       <workItem from="1582469034256" duration="4281000" />
       <workItem from="1582477962278" duration="2002000" />
-      <workItem from="1582547333280" duration="29873000" />
+      <workItem from="1582547333280" duration="30073000" />
     </task>
+    <task id="LOCAL-00001" summary="Sorting our project and adding new exercises =D">
+      <created>1582590554211</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582590554211</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +215,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sorting our project and adding new exercises =D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorting our project and adding new exercises =D" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untitled$hello.coverage" NAME="hello Coverage Results" MODIFIED="1582052605509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
