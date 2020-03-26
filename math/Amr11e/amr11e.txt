@@ -1,0 +1,37 @@
+import java.util.Scanner; 
+class Main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    int cases_number = in.nextInt();
+    int[] cases = new int[cases_number];
+    for (int i=0;i<cases_number;i++){
+      cases[i] = in.nextInt();
+    }
+    
+    for (int i=0;i<cases_number;i++){
+      int prime = get_prime(cases[i]);
+      System.out.println(2*3*prime);
+    } 
+  }
+
+  public static int get_prime(int position) {
+    int less_number = 5;
+    while(true){
+      if(position == 0){
+        return less_number-1;
+      }
+      boolean isPrime = true;
+      for(int i = less_number-1;i>1;i--) {
+        if(less_number%i == 0) 
+        {
+          isPrime = false;
+          break;
+        }
+      }
+      if (isPrime) {
+        position--;
+      }
+      less_number++;
+    }
+  }
+}
