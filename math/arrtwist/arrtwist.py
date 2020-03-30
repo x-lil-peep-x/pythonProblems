@@ -14,9 +14,19 @@ def check_twisted_arrays(array_a, array_b):
 length_a, length_b = map(int, input().split())
 sequence_a = []
 for counter in range(0, length_a):
-    sequence_a.append(int(input()))
+    num = int(input())
+    if num <= length_b:
+        sequence_a.append(num)
+    else:
+        print(0)
+        quit()
 sequence_b = []
 for counter in range(0, length_b):
-    sequence_b.append(int(input()))
+    num = int(input())
+    if num <= length_a:
+        sequence_b.append(num)
+    else:
+        print(0)
+        quit()
 
 check_twisted_arrays(sequence_a, sequence_b)
