@@ -1,0 +1,30 @@
+test_cases = int(input())
+
+
+def quick_sort(vector):
+    if not vector:
+        return []
+    else:
+        pivot = vector[-1]
+        minor_nums = [x for x in vector if x < pivot]
+        higher_nums = [x for x in vector[:-1] if x >= pivot]
+        return quick_sort(minor_nums) + [pivot] + quick_sort(higher_nums)
+
+
+for case in range(test_cases):
+    accounts = []
+    counters = dict()
+    counter = 1
+    accounts_num = int(input())
+    for index in range(accounts_num):
+        value = input()
+        if accounts.count(value):
+            counter += 1
+            counters[value] = counter
+        else:
+            accounts.append(value)
+            counters[value] = counter
+        counter = 1
+    sorted_list = quick_sort(accounts)
+    for index in range(len(sorted_list)):
+        print(sorted_list[index], counters[sorted_list[index]])
