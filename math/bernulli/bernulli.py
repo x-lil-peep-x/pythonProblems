@@ -1,19 +1,61 @@
-from fractions import Fraction as Fr
-import numpy as np
+from decimal import *
+import math
+
+pi = Decimal('3.141592653589793238462643383279502884197169399375105820974944592307816406286')
 
 
-def get_bernoulli(num):
-    A = [0] * (num + 1)
-    for m in range(num + 1):
-        A[m] = Fr(1, m + 1)
-        for j in range(m, 0, -1):
-            A[j - 1] = j * (A[j - 1] - A[j])
-    return float(A[0])  # (which is Bn)
+def factorial(n): return reduce(lambda a, b: a * b, [1] + range(1, n + 1))
 
 
-number = int(input())
-bernoulli_number = get_bernoulli(number)
-if bernoulli_number < 0:
-    bernoulli_number = -number
-natural_logarithm_number = np.log(bernoulli_number)
-print(natural_logarithm_number)
+# Algorithm for finding all prime numbers up to the given limit known as Sieve of Eratosthenes
+def prime_sieve(n):
+    prime_list = []
+    res = []
+    for i in range(2, n + 1):
+        if i not in prime_list:
+            res.append(i)
+            for j in range(i * i, n + 1, i):
+                prime_list.append(j)
+    return res
+
+
+# The general procedure for the McGown algorithm
+def b(n):
+    if n == 0:
+        return 1
+    elif n == 1:
+        return 0.5
+    elif (n - 1) % 2 == 0:
+        return 0
+    else:
+        K = 2 * factorial(n) * 1 / Decimal((2 * pi) ** (n))
+
+        primes = prime_sieve(n + 1)
+        d = Decimal(1)
+        for p in primes:
+            if n % (p - 1) == 0:
+                d *= p
+
+        N = math.ceil((K * d) ** (Decimal(1.0 / (n - 1))))
+
+        z = Decimal(1)
+        for p in primes:
+            if p <= N:
+                z *= 1 / (1 - 1 / (Decimal(p) ** n))
+
+        a = (-1) ** (n / 2 + 1) * Decimal(d * K * z)
+        a = a.to_integral_exact(rounding=ROUND_HALF_EVEN)
+        if a == 0:
+            a = (-1) ** (n / 2 + 1)
+        print(a)  # Print numerator
+        print(d)  # Print denominator
+        return a / d
+
+
+n = int(input())
+
+# Set precision. It allows accurate cumputing up to the 154th Bernoulli number.
+if n > 28:
+    getcontext().prec = n
+
+print(b(n))  # Print n-th Bernoulli number
