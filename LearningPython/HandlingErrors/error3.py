@@ -5,9 +5,13 @@ while (True):
     # if there is an error
     except ValueError:
         print('Please enter a number')
+        continue
     except ZeroDivisionError:
         print('Please enter a higher than 0')
+        break
     # if there is no error
     else:
         print('No error')
-        break
+    finally:
+        print('Ok i am done')
+    print('Can you see me?')
